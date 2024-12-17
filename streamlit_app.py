@@ -779,7 +779,7 @@ def pca_plot(data_name, X):
 def main():
 
     # Giving Title
-    st.title("HyperTuneML Platform")
+    st.title("Praful Bhoyar's Platform")
 
     # Giving Title
     st.write("### ML Algorithms on Inbuilt and Kaggle Datasets")
@@ -846,29 +846,6 @@ def main():
     data_model_description(algorithm, algorithm_type, data_name, data, X, Y)
 
 
-# Function to include background image and opacity
-def display_background_image(url, opacity):
-    """
-    Displays a background image with a specified opacity on the web app using CSS.
-
-    Args:
-    - url (str): URL of the background image.
-    - opacity (float): Opacity level of the background image.
-    """
-    # Set background image using HTML and CSS
-    st.markdown(
-        f"""
-        <style>
-            body {{
-                background: url('{url}') no-repeat center center fixed;
-                background-size: cover;
-                opacity: {opacity};
-            }}
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
-
 
 # Starting Execution of the Program
 if __name__ == "__main__":
@@ -877,13 +854,8 @@ if __name__ == "__main__":
     # This title will only be visible when running the app locally.
     # In the deployed app, the title will be displayed as "Title - Streamlit," where "Title" is the one we provide.
     # If we don't set the title, it will default to "Streamlit"
-    st.set_page_config(page_title="HyperTuneML Platform")
+    st.set_page_config(page_title="Praful Bhoyar's Platform")
 
-    # Call function to display the background image with opacity
-    display_background_image(
-        "https://i.morioh.com/52c215bc5f.png",
-        0.8,
-    )
-
+    
     # Calling Main Function
     main()
